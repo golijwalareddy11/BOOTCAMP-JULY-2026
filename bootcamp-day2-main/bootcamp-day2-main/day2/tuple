@@ -1,0 +1,7 @@
+tuple1=(1,2,'ace',14,27)
+tuple2=(8,3,56,89,90)
+print(tuple1+tuple2)
+print(tuple2[2])
+
+
+

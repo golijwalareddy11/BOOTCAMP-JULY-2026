@@ -1,0 +1,7 @@
+dict1={"name":'ace',"age":'34',"year":2025}
+dict2={"name":'college',"age":'90',"year":345}
+print(dict1)
+print(dict2.values())
+print(dict1.keys())
+
+

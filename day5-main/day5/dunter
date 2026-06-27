@@ -1,0 +1,17 @@
+class Student:
+    def __init__(self,name,branch,rno):
+        self.Sname=name
+        self.Sbranch=branch
+        self.Srno=rno
+    def name(self):
+        print(self.name)
+    def __repr__(self):
+        return  f"{self.Sname},{self.Sbranch},{self.Srno}"
+    def __str__(self):
+        return  f"{self.Sname},{self.Sbranch},{self.Srno}"
+S1=Student("xyz","mlk",123)
+print(S1)
+#S2=Student("xyz","mlk",123)
+#print(S2)
+
+    

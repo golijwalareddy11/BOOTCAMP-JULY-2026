@@ -1,0 +1,11 @@
+list1=[1,2,'ace',8,9]
+list2=[5,8,78,'college',89]
+list3=list1+list2
+print(list2[0])
+print(list3)
+a=list2.insert(2,10)
+print(list2)
+b=list1.append(10)
+print(list1)
+
+

@@ -1,0 +1,10 @@
+name1=input("enter name1:")
+name2=input("enter name2:")
+name3=name1+name2
+print(name3)
+print(name1.isupper())
+print(name1[1])
+print(name2[0].upper()+name1[1:])
+print(name2[0:].upper())
+print(name3*3)
+print(name3[4])

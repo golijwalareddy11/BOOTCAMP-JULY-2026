@@ -1,0 +1,55 @@
+from abc import ABC, abstractmethod
+import math
+
+class Shape(ABC):
+
+    @abstractmethod
+    def area(self):
+        pass
+
+    @abstractmethod
+    def perimeter(self):
+        pass
+
+
+class Circle(Shape):
+    def __init__(self, r):
+        self.rad = r
+
+    def area(self):
+        return math.pi * self.rad ** 2
+
+    def perimeter(self):
+        return 2 * math.pi * self.rad
+
+
+class Triangle(Shape):
+    def __init__(self, b, h):
+        self.base = b
+        self.height = h
+
+    def area(self):
+        return 0.5 * self.base * self.height
+
+    def perimeter(self):
+        return "Need all three sides"
+
+
+class Square(Shape):
+    def __init__(self, s):
+        self.side = s
+
+    def area(self):
+        return self.side ** 2
+
+    def perimeter(self):
+        return 4 * self.side
+
+
+c1 = Circle(20)
+c2 = Triangle(10, 12)
+c3 = Square(19)
+
+print(c1.area())
+print(c2.area())
+print(c3.area())

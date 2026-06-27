@@ -1,0 +1,6 @@
+fruits={"apple","mango","banana"}
+vegetables={"potato","cucumber","chillis"}
+fruits.remove("apple")
+print(fruits)
+vegetables.add("tomato")
+print(vegetables)
