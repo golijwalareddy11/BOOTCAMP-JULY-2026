@@ -1,0 +1,24 @@
+import pandas as pd
+student={
+    "name":['ria','lucy','jam','peter'],
+     "rno":[213,213,216,213],
+     "branch":['csm','csd','cse','it']
+}
+dframe=pd.DataFrame(student)
+dframe
+dframe.iloc[2,1]
+dframe.columns
+dframe.value_counts()
+dfyear=dframe.loc[:,'rno']==202
+dfyear
+dframe.loc[:,'branch']=='aids' 
+dframe.loc[:,'rno']==218
+filt=dframe['rno']==213
+dframe.loc[filt].head()
+filt=((dframe['rno']==213) | (dframe['name']=='lucy'))
+dframe.loc[filt].sort_index(ascending=True).head()
+filt=((dframe['rno']==213) | (dframe['name']=='lucy'))
+dframe.loc[filt].sort_index(ascending=False).tail()
+dframe.loc[0:2,['name','rno']]
+dframe.iloc[0:1,[1,2]]
+
